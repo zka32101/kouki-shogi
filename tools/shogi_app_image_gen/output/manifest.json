@@ -1,0 +1,98 @@
+{
+  "samurai": {
+    "nameJp": "武士",
+    "file": "samurai.png",
+    "prompt": "a noble samurai warrior with a proud determined expression, dark navy blue traditional armor (yoroi) with subtle gold trim, katana sheathed at the hip, accent color #1565C0 used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-01T10:52:47.274Z"
+  },
+  "ninja": {
+    "nameJp": "忍者",
+    "file": "ninja.png",
+    "prompt": "a stealthy ninja shrouded in dark slate-grey garb, half-masked face with sharp focused eyes, shuriken tucked at the belt, accent color #37474F used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-01T10:52:55.382Z"
+  },
+  "kenshi": {
+    "nameJp": "剣士",
+    "file": "kenshi.png",
+    "prompt": "a master swordsman in a calm ready stance, focused serene expression, minimalist grey traditional attire, single katana drawn and gleaming, accent color #455A64 used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:18:37.805Z"
+  },
+  "shogun": {
+    "nameJp": "将軍",
+    "file": "shogun.png",
+    "prompt": "a regal shogun ruler wearing ornate golden-brown lacquered armor and an imposing kabuto helmet, commanding authoritative expression, accent color #B8860B used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:18:45.976Z"
+  },
+  "tengu": {
+    "nameJp": "天狗",
+    "file": "tengu.png",
+    "prompt": "a mythical tengu mountain spirit with red skin and a cute rounded long nose, feathered cloak, playful mischievous expression, no human features, accent color #C62828 used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:18:54.131Z"
+  },
+  "ryuou": {
+    "nameJp": "龍王",
+    "file": "ryuou.png",
+    "prompt": "a legendary young dragon king face, majestic deep-purple scales, big round glowing golden eyes, small cute horns, regal but adorable mythical presence, no human features, accent color #4A148C used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:02.587Z"
+  },
+  "kitsunebi": {
+    "nameJp": "狐火",
+    "file": "kitsunebi.png",
+    "prompt": "a mystical fox spirit face wreathed in blue-orange fox fire flames, big bright eyes with a cute clever expression, no human features, accent color #E65100 used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:10.971Z"
+  },
+  "taka": {
+    "nameJp": "鷹",
+    "file": "taka.png",
+    "prompt": "a majestic hawk with sharp piercing eyes and richly detailed dark brown feathers, noble bird of prey in a proud pose, no human features, accent color #4E342E used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:19.306Z"
+  },
+  "tora": {
+    "nameJp": "虎",
+    "file": "tora.png",
+    "prompt": "a cute powerful tiger cub face with amber-orange striped fur, big bright golden eyes, confident but adorable expression, no human features, accent color #F57F17 used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:27.713Z"
+  },
+  "ookami": {
+    "nameJp": "狼",
+    "file": "ookami.png",
+    "prompt": "a lone wolf with sleek blue-grey fur and piercing pale yellow eyes, solitary noble predator gazing forward, no human features, accent color #546E7A used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:35.755Z"
+  },
+  "oni": {
+    "nameJp": "鬼",
+    "file": "oni.png",
+    "prompt": "a small cute oni demon with deep crimson-magenta skin, tiny curved horns, an impish cheerful fanged grin, traditional Japanese demon mask motif, no human features, accent color #880E4F used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:43.760Z"
+  },
+  "sennin": {
+    "nameJp": "仙人",
+    "file": "sennin.png",
+    "prompt": "an immortal sage hermit with a long flowing white beard, teal-green robes, a serene wise expression and a subtle mystical aura, holding a wooden staff, accent color #00695C used in clothing or aura highlights, extreme close-up face portrait, face and head fill almost the entire frame, cute chibi-influenced game avatar style, big sparkling expressive eyes, soft rounded features, endearing charming look, Japanese ink painting (sumi-e) accents fused with clean digital game icon illustration, circular icon composition with clear silhouette, soft rim lighting, subtle gold and vermillion accent linework, muted elegant ink-wash background, high detail digital illustration, no text no watermark no border no signature",
+    "provider": "leonardo",
+    "modelId": "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3",
+    "generatedAt": "2026-08-02T00:19:52.065Z"
+  }
+}

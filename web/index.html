@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="本格将棋アプリ。AI対局・棋譜管理・感想戦・詰将棋・定跡学習が楽しめます。">
+  <meta name="keywords" content="将棋,shogi,AI,棋譜,詰将棋">
+
+  <!-- PWA / iOS -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="利き将棋">
+  <meta name="theme-color" content="#16213E">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icons/Icon-512.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>利き将棋</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- インストールバナー非表示スタイル -->
+  <style>
+    body { margin: 0; background-color: #1A1A2E; }
+    #pwa-install-banner {
+      display: none;
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #16213E;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 12px 20px;
+      z-index: 9999;
+      font-family: sans-serif;
+      font-size: 14px;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    #pwa-install-banner button {
+      background: #C8922A;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 6px 14px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    #pwa-install-banner .close-btn {
+      background: transparent;
+      color: rgba(255,255,255,0.4);
+      padding: 4px 8px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- PWA インストールバナー -->
+  <div id="pwa-install-banner">
+    <span>📱 ホーム画面に追加できます</span>
+    <button id="pwa-install-btn">追加する</button>
+    <button class="close-btn" id="pwa-dismiss-btn">✕</button>
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
+
+  <script>
+    // Service Worker 登録
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(reg) { console.log('[SW] registered:', reg.scope); })
+          .catch(function(err) { console.log('[SW] registration failed:', err); });
+      });
+    }
+
+    // PWA インストールバナー
+    let deferredPrompt = null;
+    const banner = document.getElementById('pwa-install-banner');
+    const installBtn = document.getElementById('pwa-install-btn');
+    const dismissBtn = document.getElementById('pwa-dismiss-btn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      // 一度却下されていなければ表示
+      if (!sessionStorage.getItem('pwa-dismissed')) {
+        banner.style.display = 'flex';
+      }
+    });
+
+    installBtn && installBtn.addEventListener('click', async () => {
+      banner.style.display = 'none';
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+      }
+    });
+
+    dismissBtn && dismissBtn.addEventListener('click', () => {
+      banner.style.display = 'none';
+      sessionStorage.setItem('pwa-dismissed', '1');
+    });
+  </script>
+</body>
+</html>

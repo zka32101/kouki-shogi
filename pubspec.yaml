@@ -1,0 +1,75 @@
+name: shogi_app
+description: "将棋ボードゲーム。AI対局・ネットワーク対局・棋譜管理・手筋トレーニングを搭載。"
+publish_to: 'none'
+
+version: 1.1.2+13
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.3.0
+
+  # ローカライズ / 日付フォーマット
+  intl: ^0.20.2
+
+  # 状態管理
+  flutter_riverpod: ^2.6.1
+
+  # 環境変数
+  flutter_dotenv: ^5.2.1
+
+  # 広告・課金
+  google_mobile_ads: ^5.3.0
+  in_app_purchase: ^3.2.0
+
+  # Firebase（ネットワーク対局・報告機能・Cloud Functions）
+  firebase_core: ^4.11.0
+  firebase_database: ^12.4.4
+  firebase_storage: ^13.4.3
+  cloud_firestore: ^6.6.0
+  firebase_auth: ^6.5.4
+  firebase_messaging: ^16.4.1
+  firebase_crashlytics: ^5.2.4
+  cloud_functions: ^6.3.3
+  network_info_plus: ^6.0.0
+  share_plus: ^10.0.0
+
+  # HTTP クライアント（lishogi API 等外部連携）
+  http: ^1.2.2
+
+  # ハッシュ生成（棋譜分析パターンキー）
+  crypto: ^3.0.3
+
+  # URL リンク
+  url_launcher: ^6.1.10
+
+  # グラフ・チャート
+  fl_chart: ^0.65.0
+
+  # 棋譜再生のGIFアニメ書き出し（動画共有用）
+  image: ^4.8.0
+
+  # 音声入力（棋譜の読み上げ入力）
+  speech_to_text: ^7.0.0
+
+  # 音声読み上げ（指し手・解説のTTS。モバイルの実音声出力に使用）
+  flutter_tts: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/tsume_extra.json
+    - assets/character_icons/

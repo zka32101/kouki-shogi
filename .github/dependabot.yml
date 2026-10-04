@@ -1,0 +1,20 @@
+# .github/dependabot.yml
+# 依存パッケージの脆弱性を自動検知し、PRを自動作成する設定。
+# ecosystem は使用しているものだけ残せばよい（例: iOSならswift、Node.jsならnpm）。
+
+version: 2
+updates:
+  - package-ecosystem: "swift"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

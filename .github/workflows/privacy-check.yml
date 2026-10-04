@@ -1,0 +1,52 @@
+# .github/workflows/ に配置する。
+# push / PR 時に差分中の禁止ワードを検知してCIを失敗させる。
+# ジョブ名・ファイル名は無難なものにしてあるが、必要に応じて変更してよい。
+
+name: content-check
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Scan diff for forbidden words
+        env:
+          # 検知したい単語をカンマ区切りでリポジトリSecretsに登録する（コミット差分に単語自体が残らないようにするため）
+          # 例: Settings > Secrets and variables > Actions > New repository secret
+          #     Name: FORBIDDEN_WORDS_CSV  Value: "LAC,株式会社ラック,本名など"
+          FORBIDDEN_WORDS_CSV: ${{ secrets.FORBIDDEN_WORDS_CSV }}
+        run: |
+          if [ -z "$FORBIDDEN_WORDS_CSV" ]; then
+            echo "FORBIDDEN_WORDS_CSV が未設定です。Secretsに登録してください。"
+            exit 0
+          fi
+          DIFF=$(git diff HEAD~1 HEAD || git show HEAD)
+          FOUND=0
+          IFS=',' read -ra WORDS <<< "$FORBIDDEN_WORDS_CSV"
+          for w in "${WORDS[@]}"; do
+            if echo "$DIFF" | grep -iq -- "$w"; then
+              echo "::error::禁止ワードが検出されました（詳細はマスクされています）"
+              FOUND=1
+            fi
+          done
+          if [ "$FOUND" -eq 1 ]; then
+            exit 1
+          fi
+
+      - name: Check for accidentally committed secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
