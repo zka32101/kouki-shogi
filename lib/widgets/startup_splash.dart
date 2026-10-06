@@ -22,7 +22,7 @@ class StartupSplash extends StatelessWidget {
                 label: 'Your Wish',
                 child: Image.asset(
                   'assets/branding/yourwish_logo.png',
-                  height: 40,
+                  height: 72,
                   fit: BoxFit.contain,
                 ),
               ),
