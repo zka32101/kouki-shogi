@@ -12,6 +12,9 @@ on:
 
 permissions:
   contents: read
+  # gitleaks-action は PR 実行時に GET /pulls/{number}/commits を呼ぶため、
+  # pull-requests: read が無いと 403 (Resource not accessible by integration) で落ちる。
+  pull-requests: read
 
 jobs:
   scan:
@@ -20,7 +23,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          # gitleaks-action は PR の全コミット範囲（最初のコミットの親〜
+          # 最新コミット）を git log で辿る。fetch-depth を固定値にすると、
+          # それを上回るコミット数のPRで "unknown revision" エラーになる
+          # ため、全履歴を取得する。
+          fetch-depth: 0
 
       - name: Scan diff for forbidden words
         env:
