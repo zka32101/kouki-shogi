@@ -12,6 +12,9 @@ on:
 
 permissions:
   contents: read
+  # gitleaks-action は PR 実行時に GET /pulls/{number}/commits を呼ぶため、
+  # pull-requests: read が無いと 403 (Resource not accessible by integration) で落ちる。
+  pull-requests: read
 
 jobs:
   scan:
