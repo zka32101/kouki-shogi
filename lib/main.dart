@@ -81,9 +81,12 @@ import 'screens/custom_period_analysis_screen.dart';
 import 'screens/personalized_lesson_screen.dart';
 import 'services/kifu_analytics_service.dart';
 import 'models/game_analysis.dart';
+import 'widgets/startup_splash.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // 初期化待ちの間、白画面ではなく組織ロゴ付きの起動画面を先に出す
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: StartupSplash()));
   // 起動を体感的に高速化するため、初期化系(広告SDK/課金/Firebase/FCM)を
   // runApp() より後ろのバックグラウンドへ回す。各サービスは準備完了まで
   // 内部で ready フラグ/nullチェックを行う設計のため、初回フレーム表示を
